@@ -1,11 +1,11 @@
-About r-shinymodels
-===================
+About r-shinymodels-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-shinymodels-feedstock/blob/main/LICENSE.txt)
 
 Home: https://shinymodels.tidymodels.org, https://github.com/tidymodels/shinymodels
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-shinymodels-feedstock/blob/main/LICENSE.txt)
 
 Summary: Launch a 'shiny' application for 'tidymodels' results. For classification or regression models, the app can be used to determine if there is lack of fit or poorly predicted points.
 
