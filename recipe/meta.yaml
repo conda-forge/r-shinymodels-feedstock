@@ -1,4 +1,4 @@
-{% set version = '0.1.0' %}
+{% set version = "0.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/shinymodels_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/shinymodels/shinymodels_{{ version }}.tar.gz
-  sha256: f16c22e8bf0c9b81935648e5b4060559aac0a03828bbee5bf6dc9fb0f544ec9c
+  sha256: 9442e82d171f0598adee8bc533c49a160e9dc4575a01acd754e77892bc25b2f9
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -73,9 +73,7 @@ test:
 about:
   home: https://shinymodels.tidymodels.org, https://github.com/tidymodels/shinymodels
   license: MIT
-  summary: Launch a 'shiny' application for 'tidymodels' results. For classification or regression
-    models, the app can be used to determine if there is lack of fit or poorly predicted
-    points.
+  summary: Launch a 'shiny' application for 'tidymodels' results. For classification or regression models, the app can be used to determine if there is lack of fit or poorly predicted points.
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
