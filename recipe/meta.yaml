@@ -1,6 +1,5 @@
 {% set version = "0.1.1" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-shinymodels
@@ -13,8 +12,7 @@ source:
   sha256: 9442e82d171f0598adee8bc533c49a160e9dc4575a01acd754e77892bc25b2f9
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
